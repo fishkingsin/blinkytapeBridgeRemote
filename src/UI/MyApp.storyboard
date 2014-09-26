@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vmd-mf-7pu">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--My App View Controller-->
+        <scene sceneID="rKa-us-pF8">
+            <objects>
+                <viewController id="WnR-f5-iQh" customClass="MyAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9If-Iw-WCE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D6M-c4-M5U"/>
+                    <connections>
+                        <segue destination="3Yc-Au-gwl" kind="push" identifier="ColorChooser" id="8aG-1N-o4B"/>
+                        <segue destination="IuH-YL-7EE" kind="push" identifier="PatternPaint" id="cvt-MH-nrp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAY-ff-w5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-123"/>
+        </scene>
+        <!--Color Chooser App View Controller-->
+        <scene sceneID="sRY-iz-B64">
+            <objects>
+                <viewController id="3Yc-Au-gwl" customClass="ColorChooserAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I9h-pN-zY9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="07S-AB-R8A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iU-MZ-s4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-123"/>
+        </scene>
+        <!--Pattern Paint App View Controller-->
+        <scene sceneID="sDc-UQ-Fq5">
+            <objects>
+                <viewController id="IuH-YL-7EE" customClass="PatternPaintAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pkO-gF-n52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kep-Z1-Tqj">
+                        <barButtonItem key="rightBarButtonItem" image="menu" style="plain" id="LbQ-RO-U8b"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zL9-Y8-Cxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="593"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mrF-Av-PNC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjO-hW-1OA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="vmd-mf-7pu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Cp-Kw-MBe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WnR-f5-iQh" kind="relationship" relationship="rootViewController" id="liR-db-LDM"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="348" y="-123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="32" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
